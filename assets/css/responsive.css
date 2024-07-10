@@ -1,0 +1,50 @@
+@media only screen and (max-width: 576px) {
+  .box-area h1,
+  .box p {
+    display: none;
+  }
+
+  .half-black-white .content h1 {
+    font-size: 3em;
+  }
+
+  .half-black-white .content p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .box-area h1,
+  .box p {
+    display: none;
+  }
+
+  .half-black-white .content h1 {
+    font-size: 3em;
+  }
+
+  .half-black-white .content p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .box-area h1,
+  .box p {
+    display: block;
+  }
+
+  .bottom p {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .half-black-white .content h1 {
+    font-size: 3em;
+  }
+
+  .half-black-white .content p {
+    font-size: 1.8em;
+  }
+}
