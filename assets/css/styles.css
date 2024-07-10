@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  background: linear-gradient(to right, #000 50%, #fff 50%);
+  padding: 20px 0;
+}
+
+.logo img{
+  height: 100px;
+  width: 100px;
+}
+
+
+.half-black-white {
+    height: 100vh;
+    background: linear-gradient(to right, #000 50%, #fff 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.half-black-white .content {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.half-black-white .content h1 {
+    font-size: 2em;
+    color: black;
+}
+
+.half-black-white .content h1 span {
+    color: white;
+}
+
+.half-black-white .content p {
+    font-size: 1.5em;
+    color: black;
+}
+
+.half-black-white .content p span {
+    color: white;
+}
+
+.half-black-white .content button {
+    padding: 15px 30px;
+    background-color: rgb(94,67,143);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 52500px; /* Adjust this value if necessary */
+    box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #8000FF;
+}
+
+
+#contact input[type="submit"]:hover {
+    background-color: #8000FF;
+}
+
+.half-black-white::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background: #fff;
+    z-index: 0;
+}
+
+
+
+
+/* Improved color contrast for better readability */
+
+.half-black-white .content h1 span:nth-child(1) {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.half-black-white .content h1 span:nth-child(2) {
+  text-shadow: 0px 0px 2px rgb(255, 254, 254);
+  color: #000;
+}
+
+.half-black-white .content p span:nth-child(1) {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.half-black-white .content p span:nth-child(2) {
+  text-shadow: 0px 0px 2px rgb(255, 254, 254);
+  color: #000;
+}
+
+.half-black-white .content button {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Add the following CSS for top and bottom sections */
+.top {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 47px));
+  background-color: #FFFFFF;
+  height: 0px;
+}
+
+
+.bottom {
+  clip-path: polygon(0 0, 100% 47px, 100% 100%, 0 100%);
+  /* background: #8000FF; */
+  background: linear-gradient(151deg, #8000FF 0%, rgba(166,121,221,1) 62%, rgba(203,149,248,1) 100%);
+
+  height: 500px;
+  margin-top: -70px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 90px 0;
+  color: white;
+}
+
+
+.bottom h1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bottom p {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+}
+
+
+.services {
+	background: #8000FF;
+	color: #fff;
+}
+
+.services h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  padding: 40px 0;
+}
+
+
+
+
+
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 2px solid #8000FF;
+  background-color: #000;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.2 ease-in;
+}
+
+.footer a:hover {
+  color: #8000FF;
+  transition: 0.2 ease-out;
+}
+
+
+
+
+
+
+
+
+/*
+.x-plus-enter-active {
+  animation: 1s x-plus-enter forwards; 
+}
+
+.x-plus-leave-active {
+  animation: 1s x-plus-leave forwards; 
+}
+
+@keyframes x-plus-enter {
+  0% {
+    clip-path: path('M-400 600L-400 -400L600 -400L600 600L-400 600ZM0.01 -0.02L-200 -0.02L-200 199.98L0.01 199.98L0.01 400L200.01 400L200.01 199.98L400 199.98L400 -0.02L200.01 -0.02L200.01 -200L0.01 -200L0.01 -0.02Z');
+  }
+  100% {
+    clip-path: path('M-400 600L-400 -400L600 -400L600 600L-400 600ZM98.33 98.33L95 98.33L95 101.67L98.33 101.67L98.33 105L101.67 105L101.67 101.67L105 101.67L105 98.33L101.67 98.33L101.67 95L98.33 95L98.33 98.33Z');
+  }
+}
+
+@keyframes x-plus-leave {
+  0% {
+    clip-path: path('M-400 600L-400 -400L600 -400L600 600L-400 600ZM96.79 95L95 96.79L98.2 100L95 103.2L96.79 105L100 101.79L103.2 105L105 103.2L101.79 100L105 96.79L103.2 95L100 98.2L96.79 95Z');
+  }
+  100% {
+    clip-path: path('M-400 600L-400 -400L600 -400L600 600L-400 600ZM-92.31 -200L-200 -92.31L-7.69 100L-200 292.31L-92.31 400L100 207.69L292.31 400L400 292.31L207.69 100L400 -92.31L292.31 -200L100 -7.69L-92.31 -200Z');
+  }
+}
+*/

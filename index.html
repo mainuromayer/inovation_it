@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squad Connect</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/boxcontent.css">
+</head>
+
+<body>
+    <div class="logo">
+        <div class="container">
+            <img src="./assets/img/logo-2.png" alt="logo">
+        </div>
+    </div>
+    <section id="intro" class="half-black-white">
+        <div class="container">
+            <div class="content">
+                <h1><span>We are Squ</span><span>ad Connect</span></h1>
+                <p><span>Your Trusted Partner for Innovative IT</span> <span>Services and Modern Management</span></p>
+                <button onclick="scrollToSection('contact')">Connect with us</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="company">
+        <div class="top">
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <h1> Discover </h1>
+                <p> Squad Connect is a managed IT services provider in Windsor and Essex County, Ontario, dedicated to
+                    supporting small and medium-sized enterprises. Our mission is to deliver personalized, reliable, and
+                    scalable IT services. We specialize in optimizing operations through comprehensive IT management,
+                    cloud
+                    technologies, robust cybersecurity, and effective disaster recovery plans.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="box-area">
+        <h1> Key Services &nbsp;</h1>
+        <div class="box active">
+            <img src="" alt="img">
+            <h6>1</h6>
+            <h2>Managed IT Services</h2>
+            <p>
+                Optimize your business operations with comprehensive managed IT services. From network management and infrastructure support to help desk services, we ensure your IT systems run smoothly and efficiently.
+            </p>
+        </div>
+        <div class="box">
+            <img src="" alt="img">
+            <h6>2</h6>
+            <h2>Cloud Solutions</h2>
+            <p>
+                Harness the power of the cloud with expert cloud migration, management, and optimization services. Enhance your business operations and scalability with best practices and cutting-edge technologies.
+            </p>
+        </div>
+        <div class="box">
+            <img src="" alt="img">
+            <h6>3</h6>
+            <h2>Security Services</h2>
+            <p>
+                Protect your business with robust cybersecurity solutions. Benefit from threat monitoring, incident response, and security assessments to safeguard your data and ensure compliance with industry standards.
+            </p>
+        </div>
+        <div class="box">
+            <img src="" alt="img">
+            <h6>4</h6>
+            <h2>Business Continuity and Disaster Recovery</h2>
+            <p>
+                Ensure your business stays operational with comprehensive business continuity and disaster recovery
+                services. Implement backup solutions, disaster recovery plans, and rapid response protocols to minimize
+                downtime and data loss.
+            </p>
+        </div>
+    </div>
+
+    <section id="company">
+        <div class="top">
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <h1> Why Partner With Us </h1>
+                <p> Leverage our proven framework to assess, implement, and manage your IT needs with tailored solutions.
+                    Benefit from cost-optimized hardware, software, and cloud offerings designed to maximize value while minimizing expenses.
+                    Experience personalized support from our team of seasoned professionals dedicated to your success.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <a href="http://mabebyon.com/">Madebyon.com</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(".box").click(function () {
+            $(".box").removeClass("active");
+            $(this).addClass("active");
+        });
+
+
+
+    </script>
+</body>
+
+</html>
